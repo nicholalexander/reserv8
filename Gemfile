@@ -41,13 +41,14 @@ group :development do
 
   gem 'pry-rails'
   gem 'awesome_print'
+  gem 'rspec-rails'
 
 end
 
 group :test do
 
   gem 'rspec-rails'
-  
+
 end
 
 
