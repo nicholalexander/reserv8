@@ -37,21 +37,19 @@ gem 'haml-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development do  
+group :development, :test do 
+  gem 'rspec-rails' 
+  gem 'factory_girl_rails' 
+end 
 
+group :development do  
   gem 'pry-rails'
   gem 'awesome_print'
-  gem 'rspec-rails'
-
 end
 
-group :test do
-
-  gem 'rspec-rails'
-
+group :test do 
+  gem 'faker' 
+  gem 'capybara' 
+  gem 'guard-rspec' 
+  gem 'launchy' 
 end
-
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
