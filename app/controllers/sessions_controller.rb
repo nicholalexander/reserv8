@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     @customer = Customer.find_by_email(params[:login][:email])
     if @customer && @customer.authenticate(params[:login][:password])
       session[:customer_id] = @customer.id
-      redirect_to photos_path
+      redirect_to restaurants_path
     else
       flash.now.alert = "Email or Password Invalid"
       render "new"
