@@ -3,8 +3,12 @@ Rails.application.routes.draw do
   #root
   root 'welcome#index'
 
-  #customers
+  #resources
   resources :customers
+  resources :restaurants do
+    resources :reservations
+  end
+
 
   #sessions
   get 'login', to: 'sessions#new', as: 'login'
