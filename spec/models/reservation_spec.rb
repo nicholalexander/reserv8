@@ -9,7 +9,9 @@ require 'rails_helper'
 # end
 
 describe Reservation do
-  it 'has a valid factory'
-  it 'is invalid without a time start'
-  it 'is invalid without a date'
+  
+  it "should have valid factory" do
+    FactoryGirl.build(:reservation).should be_valid
+  end
+  
 end
