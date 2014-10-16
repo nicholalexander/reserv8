@@ -1,4 +1,4 @@
 %h1 these are all the customers!
 
-=@customers.each do |customer|
-  =customer.first_name
+-@customers.each do |customer|
+  =link_to customer.first_name, customer_path(customer.id)
