@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20141020151822) do
     t.integer  "capacity"
     t.string   "location"
     t.integer  "restaurant_id"
+    t.integer  "reservation_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
