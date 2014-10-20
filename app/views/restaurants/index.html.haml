@@ -2,3 +2,7 @@
 
 -@restaurants.each do |restaurant|
   !=ap restaurant
+
+  -restaurant.tables.each do |table|
+    !=ap table
+    

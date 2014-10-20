@@ -49,7 +49,8 @@ end
 
 group :test do 
   gem 'faker' 
-  gem 'capybara' 
+  gem 'capybara'
+  gem 'guard' 
   gem 'guard-rspec' 
   gem 'launchy' 
 end

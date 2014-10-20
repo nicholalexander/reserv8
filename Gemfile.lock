@@ -214,6 +214,7 @@ DEPENDENCIES
   capybara
   factory_girl_rails
   faker
+  guard
   guard-rspec
   haml-rails
   jbuilder (~> 2.0)
