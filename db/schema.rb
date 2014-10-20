@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141020153812) do
+ActiveRecord::Schema.define(version: 20141020162515) do
 
   create_table "customers", force: true do |t|
     t.string   "first_name"
@@ -30,7 +30,10 @@ ActiveRecord::Schema.define(version: 20141020153812) do
     t.integer  "customer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "table_id"
   end
+
+  add_index "reservations", ["table_id"], name: "index_reservations_on_table_id"
 
   create_table "restaurants", force: true do |t|
     t.string   "name"

@@ -9,9 +9,7 @@ require 'rails_helper'
 # end
 
 describe Reservation do
-  
   it "should have valid factory" do
     FactoryGirl.build(:reservation).should be_valid
   end
-  
 end
