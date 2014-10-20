@@ -1,1 +1,5 @@
 != ap @customer
+
+%h1 these are your reservations!
+-@customer.reservations.each do |reservation|
+  != ap reservation
