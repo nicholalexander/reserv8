@@ -9,5 +9,7 @@ class Reservation < ActiveRecord::Base
   #validations
   validates :price, :date, :start_time, presence: true
 
-
+  def restaurant
+    table.restaurant
+  end
 end
