@@ -9,11 +9,18 @@ Rails.application.routes.draw do
     resources :reservations
   end
 
-
   #sessions
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   resources :sessions, only: [:new, :create, :destroy]
+
+  #management
+  namespace :management do
+    root 'restaurants#index'
+    resources :restaurants do
+    end
+  end
+
 
 end
 
