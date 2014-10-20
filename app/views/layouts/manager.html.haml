@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title Resy - Management
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'manager/application'
+    = csrf_meta_tag
+    
+  %body
+    .main
+      - if flash[:alert]
+        .alert= flash[:alert]
+
+      = yield
