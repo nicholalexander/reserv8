@@ -37,6 +37,7 @@ create and delete customers
 
 ###gems
 simple_form
+friendly_id
 
 ###libraries
 form validation - http://parsleyjs.org/
@@ -65,3 +66,11 @@ name
 address
 phone
 menu
+
+----
+
+###notes:
+
+urls
+resy/bolo/tonight
+resy/nicholalexander/reservations
