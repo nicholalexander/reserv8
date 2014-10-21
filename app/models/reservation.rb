@@ -13,4 +13,12 @@ class Reservation < ActiveRecord::Base
   def restaurant
     table.restaurant
   end
+
+  def available?
+    #it's available if it is not assigned to a user
+    #it takes place after now.
+    self.customer == nil && self.start_time > Time.now
+  end
+
+
 end

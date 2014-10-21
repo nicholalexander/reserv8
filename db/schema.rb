@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141020201808) do
+ActiveRecord::Schema.define(version: 20141021190742) do
 
   create_table "customers", force: true do |t|
     t.string   "first_name"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20141020201808) do
 
   create_table "reservations", force: true do |t|
     t.date     "date"
-    t.time     "start_time"
+    t.datetime "start_time"
     t.float    "price"
     t.integer  "customer_id"
     t.datetime "created_at"

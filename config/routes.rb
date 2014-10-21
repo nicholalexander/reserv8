@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   #resources
   resources :customers
   resources :restaurants do
-    resources :reservations
+    resources :reservations do
+      get 'buy', to: 'reservations#buy_reservation', as: 'buy'
+    end
   end
 
   #sessions

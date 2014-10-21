@@ -2,3 +2,10 @@
 
 -@restaurants.each do |restaurant|
   !=ap restaurant
+
+  %h2
+    Available Reservations:
+  -restaurant.reservations.each do |reservation|
+    -if reservation.available?
+      !=ap reservation
+      =link_to 'buy this reservation', restaurant_reservation_buy_path(restaurant.id, reservation.id)
