@@ -3,7 +3,8 @@ class Reservation < ActiveRecord::Base
   belongs_to :customer
   belongs_to :table
   # belongs_to :restaurant, through: :tables - use delegate?
-  delegate :restaurant, :to => :table, :allow_nil => true
+  #TODO
+  #delegate :restaurant, :to => :table, :allow_nil => true
 
 
   #validations

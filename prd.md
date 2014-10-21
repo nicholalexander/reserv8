@@ -72,5 +72,5 @@ menu
 ###notes:
 
 urls
-resy/bolo/tonight
-resy/nicholalexander/reservations
+reserv8/bolo/tonight
+reserv8/nicholalexander/reservations
