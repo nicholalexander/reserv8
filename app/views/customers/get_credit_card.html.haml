@@ -1,0 +1,28 @@
+%h2
+  Use 4242424242424242 as a test card number with any cvc and expirary info.s
+
+= simple_form_for :card, url: customer_save_credit_card_path do |f|  
+  =f.input :number
+  =f.input :cvc
+  =f.input :exp_month
+  =f.input :exp_year
+  =f.submit "submit credit card info"
+
+
+/ %form#payment-form{:action => "", :method => "POST"}
+/   %span.payment-errors
+/   .form-row
+/     %label
+/       %span Card Number
+/       %input{"data-stripe" => "number", :size => "20", :type => "text"}/
+/   .form-row
+/     %label
+/       %span CVC
+/       %input{"data-stripe" => "cvc", :size => "4", :type => "text"}/
+/   .form-row
+/     %label
+/       %span Expiration (MM/YYYY)
+/       %input{"data-stripe" => "exp-month", :size => "2", :type => "text"}/
+/     %span /
+/     %input{"data-stripe" => "exp-year", :size => "4", :type => "text"}/
+/   %button{:type => "submit"} Submit Payment

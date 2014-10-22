@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   #resources
-  resources :customers
+  resources :customers do
+    get 'get_credit_card', to: 'customers#get_credit_card', as: 'get_credit_card'
+    post 'get_credit_card', to: 'customers#save_credit_card', as: 'save_credit_card'
+  end
+
   resources :restaurants do
     resources :reservations do
       get 'buy', to: 'reservations#buy_reservation', as: 'buy'

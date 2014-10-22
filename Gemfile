@@ -36,6 +36,11 @@ gem 'haml-rails'
 gem 'chronic'
 gem 'stripe'
 
+# TODO geocoding & maps for restaurants
+# For mapping
+# gem 'geocoder'
+# gem 'gmaps4rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
