@@ -34,7 +34,7 @@ gem 'paperclip'
 gem 'simple_form'
 gem 'haml-rails'
 gem 'chronic'
-
+gem 'stripe'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

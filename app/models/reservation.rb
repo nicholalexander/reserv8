@@ -2,9 +2,10 @@ class Reservation < ActiveRecord::Base
   #relationships
   belongs_to :customer
   belongs_to :table
+
+  # wanting a method to associate reservations with restaurants
   # belongs_to :restaurant, through: :tables - use delegate?
-  #TODO
-  #delegate :restaurant, :to => :table, :allow_nil => true
+  # delegate :restaurant, :to => :table, :allow_nil => true
 
 
   #validations
