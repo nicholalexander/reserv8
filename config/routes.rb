@@ -31,4 +31,15 @@ Rails.application.routes.draw do
     post 'manager-login', to: 'sessions#create', as: 'manager-login'
   end
 
+  #api
+  namespace :api, :defaults => {:format => :json}, :path => "", :constraints => {:subdomain => "api"} do
+    namespace :v1 do
+      resources :reservations
+      resources :restaurants
+      resources :customers
+      
+    end
+  end
+
+
 end
