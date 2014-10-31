@@ -1,5 +1,5 @@
 class ChangeTimeTypeReservations < ActiveRecord::Migration
   def change
-    change_column :reservations, :start_time, :datetime
+    remove_column :reservations, :start_time
   end
 end
