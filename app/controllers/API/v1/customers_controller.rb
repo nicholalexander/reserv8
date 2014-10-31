@@ -8,6 +8,11 @@ module API
         @customers = Customer.all
       end
 
+      def show
+        @customer = Customer.find_by_id(params["id"])
+        respond_with @customer
+      end
+
     end
   end
 end

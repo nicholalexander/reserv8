@@ -34,4 +34,14 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+    # ActionMailer::Base.smtp_settings = {
+  #     :user_name => '87c39c7facc387a72cca0d4356f80291',
+  #     :password => '4c225c8fccb59998f83060ac184e7641',
+  #     :domain => 'nycdevshop.com',
+  #     :address => 'in-v3.mailjet.com',
+  #     :port => 587,
+  #     :authentication => :plain
+  #   }
+  
 end
