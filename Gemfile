@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3', group: :development
 
 #use postgress and 12_factor for heroku
 gem 'pg'
@@ -12,8 +10,10 @@ gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+
 # Use CoffeeScript for .js.coffee assets and views
 # gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -35,11 +35,14 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#application Gems
 gem 'paperclip'
 gem 'simple_form'
-gem 'haml-rails'
 gem 'chronic'
 gem 'stripe'
+
+gem 'haml-rails'
+gem 'bootstrap-sass'
 
 # TODO geocoding & maps for restaurants
 # For mapping
