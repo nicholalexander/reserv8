@@ -16,7 +16,6 @@ Rails.application.routes.draw do
   end
 
   #sessions
-  
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   resources :sessions, only: [:new, :create, :destroy]
@@ -34,17 +33,13 @@ Rails.application.routes.draw do
 
   #api
   namespace :api, :defaults => {:format => :json}, :path => "", :constraints => {:subdomain => "api"} do
-    
-    
     namespace :v1 do
       root 'welcome#index'
 
       resources :reservations
       resources :restaurants
       resources :customers
-      
-    end
+    end  
   end
-
-
+  
 end
