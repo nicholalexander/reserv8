@@ -25,19 +25,20 @@ class CustomersController < ApplicationController
   end
 
   def save_credit_card
+    customer = Customer.find_by_id(params["customer_id"])
     #set the api key
     Stripe.api_key = "sk_test_li0Cx9dE5T4vdnxpTdt1tb4F"
 
     #create stripe_customer
     #TODO what about card errors?
     stripe_customer = Stripe::Customer.create( :description => "my first customer",
-                             :email => current_customer.email,
+                             :email => customer.email,
                              :card => {number: card_params[:number], 
                               exp_month: card_params[:exp_month], exp_year: card_params[:exp_year], 
                               cvc: card_params[:cvc]  }) 
 
-    current_customer.stripe_id = stripe_customer.id
-    current_customer.save
+    customer.stripe_id = stripe_customer.id
+    customer.save
     redirect_to restaurants_path
   end
 

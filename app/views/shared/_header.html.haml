@@ -1,0 +1,12 @@
+.navbar.navbar-default.navbar-static-top
+  .container
+    %button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse")
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    %a.navbar-brand.navbar-left(href="#") Reserv8es
+    .navbar-collapse.collapse.navbar-responsive-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li.active= link_to "Log In", login_path
+        %li= link_to "About", "#"
+    
