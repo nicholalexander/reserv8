@@ -10,3 +10,5 @@
 restaurant = Restaurant.create(name: "Bolo", street_address: "138 East 92nd Street",
       street_address_2: "", state: "NY", zip_code: "10128", phone: "212-348-9179",
       website: "www.resy.com")
+
+manager = Manager.create(name: "Bob", email: "blurgh@blocdfh.com", phone: "212-348-9179", owner: true)
