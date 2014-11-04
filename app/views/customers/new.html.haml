@@ -1,7 +1,18 @@
-= simple_form_for :customer, url: customers_path do |f|  
-  = f.input :first_name
-  = f.input :last_name
-  = f.input :email
-  = f.input :password
-  = f.input :password_confirmation
-  = f.button :submit, "New Customer"
+.vertical-center
+  .container.center_div
+    .row
+      .col-lg-6.col-lg-offset-4
+        =simple_form_for :customer, url: customers_path, :html => { :class => 'form-horizontal' } do |f|
+          .form-group
+            = f.input :first_name, input_html: { "data-tooltip" => false }
+            = f.input :last_name
+            = f.input :email
+            = f.input :password
+            = f.input :password_confirmation
+          
+          .form-actions
+            =f.submit nil, :class => 'btn btn-primary'
+            =link_to 'Cancel', customers_path, :class => 'btn'
+
+            
+
