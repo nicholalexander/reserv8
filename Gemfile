@@ -43,6 +43,7 @@ gem 'stripe'
 gem 'awesome_print'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'activeadmin', github: 'activeadmin'
 
 # TODO geocoding & maps for restaurants
 # For mapping
