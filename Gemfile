@@ -40,7 +40,7 @@ gem 'paperclip'
 gem 'simple_form'
 gem 'chronic'
 gem 'stripe'
-
+gem 'awesome_print'
 gem 'haml-rails'
 gem 'bootstrap-sass'
 
@@ -59,7 +59,6 @@ end
 
 group :development do  
   gem 'pry-rails'
-  gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
