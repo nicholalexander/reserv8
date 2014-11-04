@@ -5,6 +5,8 @@
       %span.icon-bar
       %span.icon-bar
     %a.navbar-brand.navbar-left(href="#") Reserv8es
+    .navbar-brand
+    =image_tag ('icon.png'), :class => "navbar-brand", :style => "max-width:100px; margin-top: -7px;"
     .navbar-collapse.collapse.navbar-responsive-collapse
       %ul.nav.navbar-nav.navbar-right
         %li.active= link_to "Log In", login_path
